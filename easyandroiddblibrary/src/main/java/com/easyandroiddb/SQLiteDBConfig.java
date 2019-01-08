@@ -9,8 +9,8 @@ import com.easyandroiddb.listener.SimpleDBListener;
 /**
  * 数据库相关配置
  *
- * @author: huylee
- * @time: 2015-8-12下午10:22:59
+ * @author: huding
+ * @time: 2018-8-12下午10:22:59
  */
 public final class SQLiteDBConfig {
     /**
@@ -54,8 +54,8 @@ public final class SQLiteDBConfig {
      * 获取数据库所在的上下文
      *
      * @return
-     * @author: huylee
-     * @time: 2015-8-12下午10:28:35
+     * @author: huding
+     * @time: 2018-8-12下午10:28:35
      */
     public Context getContext() {
         return mContext;
@@ -65,8 +65,8 @@ public final class SQLiteDBConfig {
      * 设置数据库所在的上下文
      *
      * @param mContext
-     * @author: huylee
-     * @time: 2015-8-12下午10:29:03
+     * @author: huding
+     * @time: 2018-8-12下午10:29:03
      */
     public void setContext(Context mContext) {
         this.mContext = mContext;

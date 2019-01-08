@@ -15,8 +15,8 @@ import com.easyandroiddb.util.DateUtil;
 
 /**
  * SQL语句执行器
- * Author: hyl
- * Time: 2015-8-14下午10:26:54
+ * Author: huding
+ * Time: 2018-8-14下午10:26:54
  */
 public class SQLExecuteManager implements Serializable {
     /**
@@ -62,8 +62,8 @@ public class SQLExecuteManager implements Serializable {
      * 在事务代码执行完成后，必须要执行successTransaction()将事务标记为成功
      * 在代码的最后必须要执行endTransaction()来结束当前事务，如果事务成功则提交事务，否则回滚事务
      *
-     * @author: huylee
-     * @time: 2015-8-20下午9:18:06
+     * @author: huding
+     * @time: 2018-8-20下午9:18:06
      */
     public void beginTransaction() {
         this.mSQLiteDataBase.beginTransaction();
@@ -72,8 +72,8 @@ public class SQLExecuteManager implements Serializable {
     /**
      * 标记当前事务成功
      *
-     * @author: huylee
-     * @time: 2015-8-20下午9:21:08
+     * @author: huding
+     * @time: 2018-8-20下午9:21:08
      */
     public void successTransaction() {
         this.mSQLiteDataBase.setTransactionSuccessful();
@@ -82,8 +82,8 @@ public class SQLExecuteManager implements Serializable {
     /**
      * 结束当前事务，当事物被标记成功后，此操作会提交事务，否则会回滚事务
      *
-     * @author: huylee
-     * @time: 2015-8-20下午9:21:25
+     * @author: huding
+     * @time: 2018-8-20下午9:21:25
      */
     public void endTransaction() {
         this.mSQLiteDataBase.endTransaction();
@@ -91,8 +91,8 @@ public class SQLExecuteManager implements Serializable {
 
     /**
      * 执行指定无返回值的单条SQL语句，如建表、创建数据库等
-     * Author: hyl
-     * Time: 2015-8-14下午11:05:03
+     * Author: huding
+     * Time: 2018-8-14下午11:05:03
      *
      * @param sql
      */
@@ -103,8 +103,8 @@ public class SQLExecuteManager implements Serializable {
 
     /**
      * 插入一条记录，返回该记录的rowId
-     * Author: hyl
-     * Time: 2015-8-17上午11:55:55
+     * Author: huding
+     * Time: 2018-8-17上午11:55:55
      *
      * @param sql
      * @param args
@@ -129,8 +129,8 @@ public class SQLExecuteManager implements Serializable {
 
     /**
      * 根据BindSQL进行插入数据
-     * Author: hyl
-     * Time: 2015-8-17下午9:55:36
+     * Author: huding
+     * Time: 2018-8-17下午9:55:36
      *
      * @param bindSQL
      * @return
@@ -142,8 +142,8 @@ public class SQLExecuteManager implements Serializable {
 
     /**
      * 绑定参数
-     * Author: hyl
-     * Time: 2015-8-17上午10:42:43
+     * Author: huding
+     * Time: 2018-8-17上午10:42:43
      *
      * @param statement
      * @param position
@@ -181,8 +181,8 @@ public class SQLExecuteManager implements Serializable {
 
     /**
      * 删除指定表
-     * Author: hyl
-     * Time: 2015-8-16下午8:17:39
+     * Author: huding
+     * Time: 2018-8-16下午8:17:39
      *
      * @param tableName
      * @throws Exception
@@ -196,8 +196,8 @@ public class SQLExecuteManager implements Serializable {
      * 删除,表名不能使用占位符
      *
      * @param bindSQL
-     * @author: huylee
-     * @time: 2015-8-20下午10:21:18
+     * @author: huding
+     * @time: 2018-8-20下午10:21:18
      */
     public void delete(BindSQL bindSQL) {
         updateOrDelete(bindSQL.getSql(), bindSQL.getBindArgs());
@@ -208,8 +208,8 @@ public class SQLExecuteManager implements Serializable {
      *
      * @param sql  删除语句(参数使用占位符)
      * @param args 占位符参数
-     * @author: huylee
-     * @time: 2015-8-20下午10:18:01
+     * @author: huding
+     * @time: 2018-8-20下午10:18:01
      */
     @SuppressLint("NewApi")
     public void updateOrDelete(String sql, Object[] args) {
@@ -233,8 +233,8 @@ public class SQLExecuteManager implements Serializable {
      * @param tableName   要删除的数据表
      * @param whereClause where后面的条件句(delete from XXX where XXX)，参数使用占位符
      * @param whereArgs   where子句后面的占位符参数
-     * @author: huylee
-     * @time: 2015-8-20下午10:22:32
+     * @author: huding
+     * @time: 2018-8-20下午10:22:32
      */
     public void delete(String tableName, String whereClause, String[] whereArgs) {
         DBLog.debug("{SQL：DELETE FROM " + tableName + " WHERE " + whereClause + "，PARAMS：" + whereArgs + "}");
@@ -245,8 +245,8 @@ public class SQLExecuteManager implements Serializable {
      * 更新
      *
      * @param bindSQL
-     * @author: huylee
-     * @time: 2015-8-20下午10:47:16
+     * @author: huding
+     * @time: 2018-8-20下午10:47:16
      */
     public void update(BindSQL bindSQL) {
         updateOrDelete(bindSQL.getSql(), bindSQL.getBindArgs());
@@ -254,8 +254,8 @@ public class SQLExecuteManager implements Serializable {
 
     /**
      * 根据SQL进行查询
-     * Author: hyl
-     * Time: 2015-8-17下午9:56:58
+     * Author: huding
+     * Time: 2018-8-17下午9:56:58
      *
      * @param sql
      * @return
@@ -266,8 +266,8 @@ public class SQLExecuteManager implements Serializable {
 
     /**
      * 执行绑定语句
-     * Author: hyl
-     * Time: 2015-8-16下午8:26:34
+     * Author: huding
+     * Time: 2018-8-16下午8:26:34
      *
      * @param sql
      * @param whereArgs
@@ -280,8 +280,8 @@ public class SQLExecuteManager implements Serializable {
 
     /**
      * 根据BindSQL查询
-     * Author: hyl
-     * Time: 2015-8-21上午10:55:46
+     * Author: huding
+     * Time: 2018-8-21上午10:55:46
      *
      * @param bindSQL
      * @return

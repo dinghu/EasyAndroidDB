@@ -25,8 +25,8 @@ import com.easyandroiddb.util.ValueUtil;
  * 
  * 注：所有操作的实体必须实现无参构造函数
  * 
- * @author: huylee
- * @time:	2015-8-12下午10:06:20
+ * @author: huding
+ * @time:	2018-8-12下午10:06:20
  */
 public class SQLiteDB {
 	/**
@@ -94,8 +94,8 @@ public class SQLiteDB {
 	/**
 	 * 保存一个实体
 	 * 当主键设置为自增长时，手动设置的主键值不会起作用，同时会自动加保存之后最新的主键值填充到对象中，并返回
-	 * @author: huylee
-	 * @time:	2015-8-12下午10:08:30
+	 * @author: huding
+	 * @time:	2018-8-12下午10:08:30
 	 * @param entity
 	 * @return
 	 */
@@ -116,8 +116,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 保存集合实体
-	 * Author: hyl
-	 * Time: 2015-8-17下午9:35:18
+	 * Author: huding
+	 * Time: 2018-8-17下午9:35:18
 	 * @param collection
 	 * @return	如果集合为空或者批量保存失败则返回-1，保存成功返回集合大小
 	 */
@@ -148,8 +148,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 删除指定实体(根据主键删除)
-	 * Author: hyl
-	 * Time: 2015-8-17下午9:43:05
+	 * Author: huding
+	 * Time: 2018-8-17下午9:43:05
 	 * @param entity	要删除的实体
 	 */
 	public <T> void delete(T entity) {
@@ -162,8 +162,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 删除集合中的实体(有事务控制)，每个实体根据主键删除
-	 * Author: hyl
-	 * Time: 2015-8-17下午10:25:59
+	 * Author: huding
+	 * Time: 2018-8-17下午10:25:59
 	 * @param collection	要删除的实体集合
 	 */
 	public <T> void delete(Collection<T> collection) {
@@ -185,8 +185,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 删除实体类中指定主键的实体
-	 * @author: huylee
-	 * @time:	2015-8-20下午9:07:26
+	 * @author: huding
+	 * @time:	2018-8-20下午9:07:26
 	 * @param mClass				要删除的实体类
 	 * @param primaryKeyValue		要删除的实体的主键值
 	 */
@@ -212,8 +212,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 根据where条件句删除相关实体
-	 * @author: huylee
-	 * @time:	2015-8-20下午9:09:11
+	 * @author: huding
+	 * @time:	2018-8-20下午9:09:11
 	 * @param tableName			要删除的数据表
 	 * @param whereClause		where后面的条件句(delete from XXX where XXX)，参数使用占位符
 	 * @param whereArgs			占位符参数
@@ -225,8 +225,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 删除,表名不能使用占位符
-	 * @author: huylee
-	 * @time:	2015-8-20下午10:18:01
+	 * @author: huding
+	 * @time:	2018-8-20下午10:18:01
 	 * @param sql		删除语句(参数使用占位符)
 	 * @param bindArgs		占位符参数
 	 */
@@ -236,8 +236,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 删除实体类所有数据
-	 * @author: huylee
-	 * @time:	2015-8-20下午11:00:46
+	 * @author: huding
+	 * @time:	2018-8-20下午11:00:46
 	 * @param mClass
 	 */
 	public void deleteAll(Class<?> mClass) {
@@ -247,8 +247,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 更新指定实体(必须设置主键，根据主键更新)
-	 * @author: huylee
-	 * @time:	2015-8-20下午10:02:41
+	 * @author: huding
+	 * @time:	2018-8-20下午10:02:41
 	 * @param entity
 	 * @return
 	 */
@@ -259,8 +259,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 更新指定集合数据(每个实体必须设置主键，根据主键更新)
-	 * @author: huylee
-	 * @time:	2015-8-20下午10:49:45
+	 * @author: huding
+	 * @time:	2018-8-20下午10:49:45
 	 * @param collection
 	 */
 	public <T> void update(Collection<T> collection) {
@@ -283,8 +283,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 更新
-	 * @author: huylee
-	 * @time:	2015-8-20下午10:51:01
+	 * @author: huding
+	 * @time:	2018-8-20下午10:51:01
 	 * @param sql
 	 * @param bindArgs
 	 */
@@ -294,8 +294,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 查询实体类全部数据
-	 * @author: huylee
-	 * @time:	2015-8-20下午10:58:53
+	 * @author: huding
+	 * @time:	2018-8-20下午10:58:53
 	 * @param mClass	要查询的实体类
 	 * @return			实体列表
 	 */
@@ -307,8 +307,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 根据主键查询指定实体
-	 * Author: hyl
-	 * Time: 2015-8-21上午10:45:50
+	 * Author: huding
+	 * Time: 2018-8-21上午10:45:50
 	 * @param primaryKeyValue
 	 * @return
 	 */
@@ -320,8 +320,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 根据条件查询实体类
-	 * Author: hyl
-	 * Time: 2015-8-21上午11:29:05
+	 * Author: huding
+	 * Time: 2018-8-21上午11:29:05
 	 * @param mClass		查询的实体类
 	 * @param whereClause	查询条件where子句
 	 * @param whereArgs		where子句参数
@@ -341,8 +341,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 根据条件查询符合条件的第一条实体类
-	 * Author: hyl
-	 * Time: 2015-8-21上午11:29:05
+	 * Author: huding
+	 * Time: 2018-8-21上午11:29:05
 	 * @param mClass		查询的实体类
 	 * @param whereClause	查询条件where子句
 	 * @param whereArgs		where子句参数
@@ -357,8 +357,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 根据SQL语句查询实体类
-	 * Author: hyl
-	 * Time: 2015-8-21上午11:29:05
+	 * Author: huding
+	 * Time: 2018-8-21上午11:29:05
 	 * @param mClass		查询的实体类
 	 * @param sql	查询条件where子句
 	 * @param whereArgs		where子句参数
@@ -372,8 +372,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 分页查询
-	 * Author: hyl
-	 * Time: 2015-8-21上午11:42:32
+	 * Author: huding
+	 * Time: 2018-8-21上午11:42:32
 	 * @param mClass	查询实体类
 	 * @param curPage	当前页码
 	 * @param pageSize	每页数据条数
@@ -387,8 +387,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 分页查询
-	 * Author: hyl
-	 * Time: 2015-8-21上午11:42:32
+	 * Author: huding
+	 * Time: 2018-8-21上午11:42:32
 	 * @param mClass	查询实体类，返回实体类型
 	 * @param curPage	当前页码
 	 * @param pageSize	每页数据条数
@@ -396,8 +396,8 @@ public class SQLiteDB {
 	 */
 	/**
 	 * 分页查询
-	 * Author: hyl
-	 * Time: 2015-8-21上午11:43:18
+	 * Author: huding
+	 * Time: 2018-8-21上午11:43:18
 	 * @param mClass		查询实体类，返回实体类型
 	 * @param whereClause			查询语句
 	 * @param whereArgs		查询语句中的参数
@@ -413,8 +413,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 查询实体类的总数据条数
-	 * Author: hyl
-	 * Time: 2015-8-21上午11:05:27
+	 * Author: huding
+	 * Time: 2018-8-21上午11:05:27
 	 * @param mClass	查询实体类
 	 * @return
 	 */
@@ -425,8 +425,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 查询实体类指定条件下的数据总数
-	 * Author: hyl
-	 * Time: 2015-8-21上午11:09:24
+	 * Author: huding
+	 * Time: 2018-8-21上午11:09:24
 	 * @param mClass			查询实体类
 	 * @param whereClause		查询条件
 	 * @param whereArgs			查询条件中的占位符参数
@@ -440,8 +440,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 根据SQL语句查询数据条数(解析结果为第一列值)
-	 * Author: hyl
-	 * Time: 2015-8-21上午11:09:24
+	 * Author: huding
+	 * Time: 2018-8-21上午11:09:24
 	 * @param sql			查询SQL
 	 * @param bindArgs		占位符参数值
 	 * @return
@@ -480,8 +480,8 @@ public class SQLiteDB {
 	
 	/**
 	 * 根据SQL语句查询
-	 * Author: hyl
-	 * Time: 2015-8-21上午11:52:11
+	 * Author: huding
+	 * Time: 2018-8-21上午11:52:11
 	 * @param sql
 	 * @param bindArgs
 	 * @return

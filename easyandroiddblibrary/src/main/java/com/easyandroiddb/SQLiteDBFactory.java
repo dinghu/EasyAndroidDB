@@ -9,8 +9,8 @@ import com.easyandroiddb.util.ValueUtil;
 
 /**
  * 数据库管理工厂
- * @author: huylee
- * @time:	2015-8-12下午10:20:59
+ * @author: huding
+ * @time:	2018-8-12下午10:20:59
  */
 public class SQLiteDBFactory {
 	/**
@@ -20,8 +20,8 @@ public class SQLiteDBFactory {
 	
 	/**
 	 * 生成一个名为dnName的数据库，目录为默认目录(参考SQLiteDBConfig里面的目录设置)}
-	 * Author: hyl
-	 * Time: 2015-8-23下午6:36:34
+	 * Author: huding
+	 * Time: 2018-8-23下午6:36:34
 	 * @param context
 	 * @param dbName		要生成的数据库名称
 	 * @return
@@ -34,8 +34,8 @@ public class SQLiteDBFactory {
 	
 	/**
 	 * 在默认目录下生成默认名称的数据库
-	 * Author: hyl
-	 * Time: 2015-8-23下午6:37:55
+	 * Author: huding
+	 * Time: 2018-8-23下午6:37:55
 	 * @param context
 	 * @return
 	 */
@@ -45,8 +45,8 @@ public class SQLiteDBFactory {
 	
 	/**
 	 * 根据自定义配置生成数据库
-	 * Author: hyl
-	 * Time: 2015-8-23下午6:38:15
+	 * Author: huding
+	 * Time: 2018-8-23下午6:38:15
 	 * @param config
 	 * @return
 	 */

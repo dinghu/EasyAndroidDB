@@ -4,8 +4,8 @@ import android.database.sqlite.SQLiteDatabase;
 
 /**
  * 数据库监听空实现
- * Author: hyl
- * Time: 2015-8-13下午1:53:11
+ * Author: huding
+ * Time: 2018-8-13下午1:53:11
  */
 public class SimpleDBListener implements IDBListener {
 

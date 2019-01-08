@@ -12,8 +12,8 @@ import com.easyandroiddb.util.ValueUtil;
 
 /**
  * 实体属性字段
- * @author: huylee
- * @time:	2015-8-13下午10:52:38
+ * @author: huding
+ * @time:	2018-8-13下午10:52:38
  */
 public class Property {
 	/**
@@ -31,8 +31,8 @@ public class Property {
 	
 	/**
 	 * 获取指定对象的当前字段的值
-	 * Author: hyl
-	 * Time: 2015-8-16下午10:23:35
+	 * Author: huding
+	 * Time: 2018-8-16下午10:23:35
 	 * @param entity	获取字段值的对象
 	 * @return
 	 */
@@ -53,8 +53,8 @@ public class Property {
 	
 	/**
 	 * 设置指定对象的当前字段的值
-	 * Author: hyl
-	 * Time: 2015-8-16下午10:24:08
+	 * Author: huding
+	 * Time: 2018-8-16下午10:24:08
 	 * @param entity	要设置字段值的对象
 	 * @param value		要设置的值
 	 * @throws Exception 
@@ -102,8 +102,8 @@ public class Property {
 	
 	/**
 	 * 设置指定实体对象当前属性字段的值
-	 * Author: hyl
-	 * Time: 2015-8-21上午10:20:14
+	 * Author: huding
+	 * Time: 2018-8-21上午10:20:14
 	 * @param entity		要设置值的实体对象
 	 * @param cursor		数据来源
 	 * @throws Exception 

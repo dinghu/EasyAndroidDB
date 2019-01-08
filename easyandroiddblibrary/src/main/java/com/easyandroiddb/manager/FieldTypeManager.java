@@ -5,8 +5,8 @@ import java.util.Date;
 
 /**
  * 字段类型
- * Author: hyl
- * Time: 2015-8-14下午11:36:12
+ * Author: huding
+ * Time: 2018-8-14下午11:36:12
  */
 public final class FieldTypeManager {
 	/**
@@ -60,8 +60,8 @@ public final class FieldTypeManager {
 	
 	/**
 	 * 该字段是否为基本字段类型
-	 * Author: hyl
-	 * Time: 2015-8-14下午10:44:46
+	 * Author: huding
+	 * Time: 2018-8-14下午10:44:46
 	 * @param field
 	 * @return
 	 */
@@ -102,8 +102,8 @@ public final class FieldTypeManager {
 	
 	/**
 	 * 获取某个值的类型
-	 * Author: hyl
-	 * Time: 2015-8-17上午10:35:20
+	 * Author: huding
+	 * Time: 2018-8-17上午10:35:20
 	 * @param obj
 	 * @return
 	 */
@@ -146,8 +146,8 @@ public final class FieldTypeManager {
 	
 	/**
 	 * 根据字段类型获取数据库支持的字段类型
-	 * Author: hyl
-	 * Time: 2015-8-14下午11:43:35
+	 * Author: huding
+	 * Time: 2018-8-14下午11:43:35
 	 * @param field
 	 * @return
 	 */
@@ -179,8 +179,8 @@ public final class FieldTypeManager {
 	
 	/**
 	 * 当前字段是否为自增长字段类型
-	 * Author: hyl
-	 * Time: 2015-8-17上午11:14:32
+	 * Author: huding
+	 * Time: 2018-8-17上午11:14:32
 	 * @param field
 	 * @return
 	 */

@@ -4,8 +4,8 @@ import java.util.LinkedHashMap;
 
 /**
  * 实体类信息
- * @author: huylee
- * @time:	2015-8-13下午10:48:41
+ * @author: huding
+ * @time:	2018-8-13下午10:48:41
  */
 public final class EntityTable {
 	/**

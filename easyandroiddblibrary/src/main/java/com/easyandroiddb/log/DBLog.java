@@ -18,8 +18,8 @@ public class DBLog {
 	
 	/**
 	 * 是否开启调试模式
-	 * Author: hyl
-	 * Time: 2015-8-13上午9:55:41
+	 * Author: huding
+	 * Time: 2018-8-13上午9:55:41
 	 * @param enable
 	 */
 	public static final void debugEnable(boolean enable) {

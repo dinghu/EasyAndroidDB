@@ -2,8 +2,8 @@ package com.easyandroiddb.bean;
 
 /**
  * Bind SQL信息，包括执行SQL语句以及执行参数
- * Author: hyl
- * Time: 2015-8-16下午9:11:35
+ * Author: huding
+ * Time: 2018-8-16下午9:11:35
  */
 public class BindSQL {
 	/**

@@ -23,8 +23,8 @@ import com.easyandroiddb.util.ValueUtil;
 
 /**
  * 实体类管理对象
- * @author: huylee
- * @time:	2015-8-13下午10:49:20
+ * @author: huding
+ * @time:	2018-8-13下午10:49:20
  */
 public final class EntityTableManager implements Serializable {
 	/**
@@ -38,8 +38,8 @@ public final class EntityTableManager implements Serializable {
 	
 	/**
 	 * 获取EntityTable对象
-	 * Author: hyl
-	 * Time: 2015-8-16下午9:06:51
+	 * Author: huding
+	 * Time: 2018-8-16下午9:06:51
 	 * @param entity
 	 * @return
 	 */
@@ -49,8 +49,8 @@ public final class EntityTableManager implements Serializable {
 	
 	/**
 	 * 获取EntityTable对象
-	 * Author: hyl
-	 * Time: 2015-8-16下午9:07:55
+	 * Author: huding
+	 * Time: 2018-8-16下午9:07:55
 	 * @param mClass
 	 * @return
 	 */
@@ -64,8 +64,8 @@ public final class EntityTableManager implements Serializable {
 
 	/**
 	 * 检查实体类表是否存在，不存在则创建该实体表，线程安全
-	 * Author: hyl
-	 * Time: 2015-8-14下午9:09:50
+	 * Author: huding
+	 * Time: 2018-8-14下午9:09:50
 	 * @param entity
 	 */
 	public synchronized static <T> void checkOrCreateTable(SQLExecuteManager sqlExecuteManager, T entity) {
@@ -74,8 +74,8 @@ public final class EntityTableManager implements Serializable {
 	
 	/**
 	 * 检查指定类所表示的表是否存在，不存在则创建该实体表，线程安全
-	 * Author: hyl
-	 * Time: 2015-8-17下午9:24:43
+	 * Author: huding
+	 * Time: 2018-8-17下午9:24:43
 	 * @param sqlExecuteManager
 	 * @param mClass
 	 */
@@ -98,8 +98,8 @@ public final class EntityTableManager implements Serializable {
 	
 	/**
 	 * 检查表的字段信息，实体中有新增字段，则给表添加相应的字段
-	 * Author: hyl
-	 * Time: 2015-8-23下午7:43:46
+	 * Author: huding
+	 * Time: 2018-8-23下午7:43:46
 	 * @param sqlExecuteManager
 	 * @param entityTable
 	 */
@@ -130,8 +130,8 @@ public final class EntityTableManager implements Serializable {
 	
 	/**
 	 * 创建实体类
-	 * Author: hyl
-	 * Time: 2015-8-14下午9:29:28
+	 * Author: huding
+	 * Time: 2018-8-14下午9:29:28
 	 * @param mClass
 	 */
 	public static EntityTable createEntityTable(Class<?> mClass) {
@@ -229,8 +229,8 @@ public final class EntityTableManager implements Serializable {
 	
 	/**
 	 * 根据实体类创建数据库表
-	 * Author: hyl
-	 * Time: 2015-8-14下午10:58:51
+	 * Author: huding
+	 * Time: 2018-8-14下午10:58:51
 	 * @param sqlExecuteManager
 	 * @param entity
 	 */
@@ -242,8 +242,8 @@ public final class EntityTableManager implements Serializable {
 	
 	/**
 	 * 删除实体类对应的数据库表
-	 * Author: hyl
-	 * Time: 2015-8-14下午10:59:11
+	 * Author: huding
+	 * Time: 2018-8-14下午10:59:11
 	 * @param sqlExecuteManager
 	 * @param entity
 	 */
@@ -254,8 +254,8 @@ public final class EntityTableManager implements Serializable {
 	
 	/**
 	 * 清除实体表缓存对象
-	 * Author: hyl
-	 * Time: 2015-8-16下午8:05:51
+	 * Author: huding
+	 * Time: 2018-8-16下午8:05:51
 	 */
 	public static void clear() {
 		mTableMap.clear();
@@ -263,8 +263,8 @@ public final class EntityTableManager implements Serializable {
 	
 	/**
 	 * 检查数据库中是否存在指定表
-	 * Author: hyl
-	 * Time: 2015-8-16下午8:43:31
+	 * Author: huding
+	 * Time: 2018-8-16下午8:43:31
 	 * @param sqlExecuteManager
 	 * @param tableName
 	 * @return

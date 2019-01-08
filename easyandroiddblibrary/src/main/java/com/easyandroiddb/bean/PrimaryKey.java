@@ -2,8 +2,8 @@ package com.easyandroiddb.bean;
 
 /**
  * 主键字段
- * Author: hyl
- * Time: 2015-8-14下午10:05:58
+ * Author: huding
+ * Time: 2018-8-14下午10:05:58
  */
 public class PrimaryKey extends Property {
 	/**

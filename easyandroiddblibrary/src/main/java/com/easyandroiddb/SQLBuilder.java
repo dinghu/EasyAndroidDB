@@ -15,15 +15,15 @@ import com.easyandroiddb.util.ValueUtil;
 
 /**
  * SQL语句构造器
- * Author: hyl
- * Time: 2015-8-17下午9:51:37
+ * Author: huding
+ * Time: 2018-8-17下午9:51:37
  */
 public class SQLBuilder {
 
     /**
      * 获取当前实体类的表名
-     * Author: hyl
-     * Time: 2015-8-14下午9:25:51
+     * Author: huding
+     * Time: 2018-8-14下午9:25:51
      *
      * @param mClass
      * @return
@@ -38,8 +38,8 @@ public class SQLBuilder {
 
     /**
      * 根据实体对象构造建表语句
-     * Author: hyl
-     * Time: 2015-8-15下午1:22:05
+     * Author: huding
+     * Time: 2018-8-15下午1:22:05
      *
      * @param entity
      * @return
@@ -71,8 +71,8 @@ public class SQLBuilder {
 
     /**
      * 检查表是否存在语句
-     * Author: hyl
-     * Time: 2015-8-16下午8:59:37
+     * Author: huding
+     * Time: 2018-8-16下午8:59:37
      *
      * @param tableName
      * @return
@@ -83,8 +83,8 @@ public class SQLBuilder {
 
     /**
      * 查询某个表中所有的字段
-     * Author: hyl
-     * Time: 2015-8-23下午7:19:21
+     * Author: huding
+     * Time: 2018-8-23下午7:19:21
      *
      * @param tableName
      * @return
@@ -95,8 +95,8 @@ public class SQLBuilder {
 
     /**
      * 更新表结构SQL(SQLite不支持删除列)
-     * Author: hyl
-     * Time: 2015-8-23下午7:58:50
+     * Author: huding
+     * Time: 2018-8-23下午7:58:50
      *
      * @param tableName
      * @param property
@@ -110,8 +110,8 @@ public class SQLBuilder {
 
     /**
      * 构造插入语句
-     * Author: hyl
-     * Time: 2015-8-16下午9:05:10
+     * Author: huding
+     * Time: 2018-8-16下午9:05:10
      *
      * @param entity 要插入的实体对象
      * @return
@@ -209,8 +209,8 @@ public class SQLBuilder {
 
     /**
      * 构造删除语句
-     * Author: hyl
-     * Time: 2015-8-17下午9:52:26
+     * Author: huding
+     * Time: 2018-8-17下午9:52:26
      *
      * @param entity 要删除的实体
      * @return
@@ -236,8 +236,8 @@ public class SQLBuilder {
      * @param mClass          要删除的实体类
      * @param primaryKeyValue 要删除的实体的主键，主键为空，则删除所有的数据
      * @return
-     * @author: huylee
-     * @time: 2015-8-20下午10:12:25
+     * @author: huding
+     * @time: 2018-8-20下午10:12:25
      */
     public static BindSQL getDeleteSQL(Class<?> mClass, String primaryKeyValue) {
         EntityTable entityTable = EntityTableManager.getEntityTable(mClass);
@@ -258,8 +258,8 @@ public class SQLBuilder {
      *
      * @param entity
      * @return
-     * @author: huylee
-     * @time: 2015-8-20下午10:44:56
+     * @author: huding
+     * @time: 2018-8-20下午10:44:56
      */
     public static <T> BindSQL getUpdateSQL(T entity) {
         EntityTable entityTable = EntityTableManager.getEntityTable(entity);
@@ -301,8 +301,8 @@ public class SQLBuilder {
      *
      * @param mClass 要查询的实体类
      * @return
-     * @author: huylee
-     * @time: 2015-8-20下午10:57:29
+     * @author: huding
+     * @time: 2018-8-20下午10:57:29
      */
     public static String getQuerySQL(Class<?> mClass) {
         String tableName = EntityTableManager.getEntityTable(mClass).getTableName();
@@ -314,8 +314,8 @@ public class SQLBuilder {
      *
      * @param mClass 要查询的实体类
      * @return
-     * @author: huylee
-     * @time: 2015-8-20下午10:57:29
+     * @author: huding
+     * @time: 2018-8-20下午10:57:29
      */
     public static BindSQL getQuerySQLById(Class<?> mClass, String primaryValue) {
         EntityTable entityTable = EntityTableManager.getEntityTable(mClass);
@@ -330,8 +330,8 @@ public class SQLBuilder {
 
     /**
      * 查询指定实体的全部数据
-     * Author: hyl
-     * Time: 2015-8-21上午11:27:37
+     * Author: huding
+     * Time: 2018-8-21上午11:27:37
      *
      * @param mClass      要查询的实体类
      * @param whereClause where子句
@@ -361,8 +361,8 @@ public class SQLBuilder {
 
     /**
      * 查询实体类数据总条数
-     * Author: hyl
-     * Time: 2015-8-21上午11:00:55
+     * Author: huding
+     * Time: 2018-8-21上午11:00:55
      *
      * @param mClass
      * @return
@@ -378,8 +378,8 @@ public class SQLBuilder {
 
     /**
      * 获取分页查询语句
-     * Author: hyl
-     * Time: 2015-8-21上午11:40:41
+     * Author: huding
+     * Time: 2018-8-21上午11:40:41
      *
      * @param mClass   要查询的实体类
      * @param curPage  查询的当前页码
@@ -399,8 +399,8 @@ public class SQLBuilder {
 
     /**
      * 获取分页查询语句
-     * Author: hyl
-     * Time: 2015-8-21上午11:49:40
+     * Author: huding
+     * Time: 2018-8-21上午11:49:40
      *
      * @param mClass      要查询的实体类
      * @param whereClause 查询where子句

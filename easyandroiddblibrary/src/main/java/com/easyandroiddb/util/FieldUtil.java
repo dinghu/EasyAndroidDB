@@ -10,8 +10,8 @@ public class FieldUtil {
 	
 	/**
 	 * 获取任意类型字段的get方法
-	 * Author: hyl
-	 * Time: 2015-8-16下午10:12:48
+	 * Author: huding
+	 * Time: 2018-8-16下午10:12:48
 	 * @param mClass
 	 * @param field
 	 * @return
@@ -30,8 +30,8 @@ public class FieldUtil {
 	
 	/**
 	 * 获取Boolean类型字段的get方法
-	 * Author: hyl
-	 * Time: 2015-8-16下午10:13:01
+	 * Author: huding
+	 * Time: 2018-8-16下午10:13:01
 	 * @param mClass
 	 * @param field
 	 * @return
@@ -52,8 +52,8 @@ public class FieldUtil {
 	
 	/**
 	 * 获取任意类型字段的set方法
-	 * Author: hyl
-	 * Time: 2015-8-16下午10:13:32
+	 * Author: huding
+	 * Time: 2018-8-16下午10:13:32
 	 * @param mClass
 	 * @param field
 	 * @return
@@ -72,8 +72,8 @@ public class FieldUtil {
 	
 	/**
 	 * 获取Boolean类型字段的set方法
-	 * Author: hyl
-	 * Time: 2015-8-16下午10:13:43
+	 * Author: huding
+	 * Time: 2018-8-16下午10:13:43
 	 * @param mClass
 	 * @param field
 	 * @return
@@ -94,8 +94,8 @@ public class FieldUtil {
 
 	/**
 	 * 判断某个字段是否为is开头
-	 * Author: hyl
-	 * Time: 2015-8-16下午10:13:56
+	 * Author: huding
+	 * Time: 2018-8-16下午10:13:56
 	 * @param fieldName
 	 * @return
 	 */

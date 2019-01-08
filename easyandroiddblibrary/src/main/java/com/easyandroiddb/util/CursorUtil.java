@@ -14,14 +14,14 @@ import com.easyandroiddb.manager.EntityTableManager;
 
 /**
  * 
- * Author: hyl
- * Time: 2015-8-16下午8:52:13
+ * Author: huding
+ * Time: 2018-8-16下午8:52:13
  */
 public class CursorUtil {
 	/**
 	 * 判断Cursor是否正确，即存在结果集
-	 * Author: hyl
-	 * Time: 2015-8-16下午8:29:47
+	 * Author: huding
+	 * Time: 2018-8-16下午8:29:47
 	 * @param cursor
 	 * @return
 	 */
@@ -34,8 +34,8 @@ public class CursorUtil {
 	
 	/**
 	 * 关闭某个Cursor
-	 * Author: hyl
-	 * Time: 2015-8-16下午8:31:22
+	 * Author: huding
+	 * Time: 2018-8-16下午8:31:22
 	 * @param cursor
 	 */
 	public static void closeCursor(Cursor cursor) {
@@ -47,8 +47,8 @@ public class CursorUtil {
 
 	/**
 	 * 解析查询游标结果集为指定实体类列表(解析完成之后会关闭游标)
-	 * Author: hyl
-	 * Time: 2015-8-21上午10:30:14
+	 * Author: huding
+	 * Time: 2018-8-21上午10:30:14
 	 * @param cursor	游标结果集
 	 * @param mClass	查询实体类
 	 * @return
@@ -84,8 +84,8 @@ public class CursorUtil {
 	
 	/**
 	 * 解析查询游标结果集第一条记录(解析完成之后会关闭游标)
-	 * Author: hyl
-	 * Time: 2015-8-21上午10:30:14
+	 * Author: huding
+	 * Time: 2018-8-21上午10:30:14
 	 * @param cursor	游标结果集
 	 * @param mClass	查询实体类
 	 * @return
@@ -117,8 +117,8 @@ public class CursorUtil {
 
 	/**
 	 * 查询实体类总数解析
-	 * Author: hyl
-	 * Time: 2015-8-21上午11:04:50
+	 * Author: huding
+	 * Time: 2018-8-21上午11:04:50
 	 * @param cursor
 	 * @return
 	 */
